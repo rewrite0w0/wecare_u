@@ -1,0 +1,99 @@
+/* general styling */
+:root {
+  --smaller: 0.75;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+
+  background: rgb(2, 0, 36);
+  background: rgb(20, 200, 69);
+  background: rgb(20, 200, 69);
+  background: linear-gradient(
+    45deg,
+    rgba(20, 200, 69, 1) 12%,
+    rgba(20, 200, 69, 1) 17%,
+    rgba(20, 200, 69, 1) 19%,
+    rgba(20, 200, 69, 1) 22%,
+    rgba(20, 200, 69, 1) 35%,
+    rgba(19, 214, 132, 1) 53%,
+    rgba(19, 222, 167, 1) 63%,
+    rgba(19, 227, 188, 1) 69%,
+    rgba(18, 233, 216, 1) 77%,
+    rgba(18, 239, 240, 1) 84%,
+    rgba(18, 239, 240, 1) 90%
+  );
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.container {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  height: 100%;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 0.5rem;
+}
+
+#company {
+  color: gray;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
